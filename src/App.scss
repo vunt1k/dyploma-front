@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+
+.App-loading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .background{
+//     background-image: url("assets/images/background.jpg");
+//     opacity: 0.5;
+// }
+
+.App{
+    position: relative;
+}

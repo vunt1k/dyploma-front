@@ -1,0 +1,21 @@
+.profile{
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+    grid-gap: 1rem;
+    h3{
+        margin-top: .4rem;
+    }
+    border: 1px solid #f0f0f0;
+    padding: 1.3rem;
+}
+
+.user-logo{
+    max-width: 10rem;
+}
+
+.course-table{
+    max-width: 60rem;
+}

@@ -1,0 +1,37 @@
+.form{
+    width: 320px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    padding: 2rem!important;    
+  }
+  
+  .file-input-label{
+    .fake-btn{
+      line-height: 1.5715;
+      position: relative;
+      display: inline-block;
+      font-weight: 400;
+      white-space: nowrap;
+      text-align: center;
+      background-image: none;
+      border: 1px solid transparent;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      cursor: pointer;
+      touch-action: manipulation;
+      height: 32px;
+      padding: 4px 15px;
+      font-size: 14px;
+      border-radius: 2px;
+      color: rgba(0, 0, 0, 0.65);
+      background: #fff;
+      border-color: #d9d9d9;
+      &:hover{
+        border-color: #40a9ff;
+        color: #40a9ff;
+      }
+    }
+    .file-input{
+      display: none!important;
+    }
+  }

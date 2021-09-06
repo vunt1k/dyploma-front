@@ -1,0 +1,47 @@
+@import '../../assets/scss/vars.scss';
+
+.header{
+    display: grid;
+    //background-color: $light;
+    padding: 1rem;
+    grid-template-columns: 1fr auto auto;
+    grid-gap: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.user-name{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: .5rem;
+    align-items: center;
+
+    .ant-avatar{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .user-nickName{
+        font-size: .9rem;
+        color: #000000;
+    }
+}
+.logo-text{
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 400;
+}
+
+.logo{
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 1.75rem 1fr;
+    align-items: center;
+}
+
+.logo-img{
+    width: 100%;
+}
+
+h2, h3{
+    padding: 0;
+    margin: 0;
+}
