@@ -18,7 +18,6 @@ import { RegisterPage } from './pages/register-page/register-page';
 import { AddCoursePage } from './pages/add-course-page/add-course-page';
 import { Spin } from 'antd';
 
-
 export const App = () => {
   const user = useSelector(state => state.user);
 
@@ -29,13 +28,15 @@ export const App = () => {
       const { status, data } = await getRequest('/applicationUsers/get-authorized');
       if(status === 200){
         dispatch(setUser(data));
-        console.log("user", data);
       }
     }
-    if(!!get("token"))
+
+    if (!!get("token")) {
       fetchUser();
-    else
+    }
+    else {
       dispatch(setUser({})); 
+    }
   }, [dispatch]);
 
   return (
@@ -55,7 +56,7 @@ export const App = () => {
               <Route path='/404' component={PageNotFound} />
               <Redirect from='*' to='/404' /> 
             </Switch>
-          </div> : <div className="App-loading"><Spin tip="Loading..."></Spin></div>
+          </div> : <div className="App-loading"><Spin tip="Loading..." /></div>
         }
       </Router> 
   );

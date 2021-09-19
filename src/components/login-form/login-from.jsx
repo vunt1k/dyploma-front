@@ -11,8 +11,9 @@ import { Facebook } from '../facebook/facebook';
 const { Item } = Form; 
 
 export const LoginForm = () => {
-  const [form] = Form.useForm();
   const dispatch = useDispatch();
+  
+  const [form] = Form.useForm();
   const [spinning, setSpinning] = useState(false);
   
   const onFinish = async values => {
